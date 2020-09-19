@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='zh-Hant'>
+<title>交通安全模擬試題 - 東華學生會 | Road Traffic Safety Mock Quiz - NDHUSA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/main.css">
+<style>
+  body,
+  h1 {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  body,
+  html {
+    height: 100%
+  }
+
+  .bg {
+    background-color: #2f3640;
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 18px;
+  }
+
+</style>
+
+<body onload="quiz(1)">
+
+  <div class="bg w3-display-container w3-animate-opacity w3-text-white">
+    <div class="w3-display-topleft w3-padding-large w3-xxlarge" style="font-weight: 900;">
+      交通安全模擬試題
+    </div>
+    <div class="w3-display-middle">
+      <h1 class="w3-animate-top w3-xlarge" style="font-weight: 700;"><span id='introduction'></span></h1>
+      <p class="w3-animate-top w3-xxlarge">情境：<br><span id='situation'></span></p>
+      <hr>
+      <div class="w3-animate-top">
+        <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'A')"><span id='optionA'></button>
+        <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'B')"><span id='optionB'></button>
+        <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'C')"><span id='optionC'></button>
+        <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'D')" id='btnD'><span id='optionD'></button>
+        <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="quiz(n+=1)">test</button>
+      </div>
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large" style="font-weight: 400;">
+      國立東華大學 學生自治會 | Students ​Association​, National Dong Hwa University</a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -141,21 +141,81 @@ function correct(a) {
   document.getElementById("answer").style.display = "block";
   document.getElementById("next").disabled = false;
 
+  var explanation = document.getElementById('explanation');
+  explanation.innerHTML = '';
   switch (a) {
     case 1:
       var p1 = document.createElement('p');
-      p1.innnerHTML = '彎中煞車是非常危險的事情，當傾角越大的時候，';
+      p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
+      p1.appendChild(document.createElement('br'));
       var img = document.createElement('img');
       img.src = 'img/1.jpg';
-      img.width = '100%';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
       var p2 = document.createElement('p');
-      p2.innerHTML = '輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。';
-      var p3 = document.createElement('p');
-      p3.innerHTML = '為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角,當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。';
-      document.getElementById('explanation').appendChild(p1);
-      document.getElementById('explanation').appendChild(img);
-      document.getElementById('explanation').appendChild(p2);
-      document.getElementById('explanation').appendChild(p3);
+      p2.appendChild(document.createTextNode('為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角，當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。'));
+      explanation.appendChild(p1);
+      explanation.appendChild(p2);
+      break;
+
+    case 2:
+      var p1 = document.createElement('p');
+      p1.appendChild(document.createTextNode('遇到「停」標記或是停車線，請先在那邊停車，然後再向前，在交叉路口與您車道會合的地方，再次停下。在那個地方將您的身體向前傾來查看建築物、停著的車子或是草叢，看看能不能看到有其他車流過來。在您在觀察的時候，確保您的前輪還沒有進入橫向路面。'));
+      p1.appendChild(document.createElement('br'));
+      var img = document.createElement('img');
+      img.src = 'img/4.jpg';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      var p2 = document.createElement('p');
+      p2.appendChild(document.createTextNode('根據台灣交通法規：看到「停」的標誌，一定要停車，不遵守將開罰600元到1800元罰單'));
+      explanation.appendChild(p1);
+      explanation.appendChild(p2);
+      break;
+
+    case 3:
+      var p1 = document.createElement('p');
+      p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
+      p1.appendChild(document.createElement('br'));
+      var img = document.createElement('img');
+      img.src = 'img/1.jpg';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
+      var p2 = document.createElement('p');
+      p2.appendChild(document.createTextNode('為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角，當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。'));
+      explanation.appendChild(p1);
+      explanation.appendChild(p2);
+      break;
+
+    case 4:
+      var p1 = document.createElement('p');
+      p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
+      p1.appendChild(document.createElement('br'));
+      var img = document.createElement('img');
+      img.src = 'img/1.jpg';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
+      var p2 = document.createElement('p');
+      p2.appendChild(document.createTextNode('為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角，當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。'));
+      explanation.appendChild(p1);
+      explanation.appendChild(p2);
+      break;
+
+    case 5:
+      var p1 = document.createElement('p');
+      p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
+      p1.appendChild(document.createElement('br'));
+      var img = document.createElement('img');
+      img.src = 'img/1.jpg';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
+      var p2 = document.createElement('p');
+      p2.appendChild(document.createTextNode('為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角，當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。'));
+      explanation.appendChild(p1);
+      explanation.appendChild(p2);
       break;
   }
 }

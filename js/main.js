@@ -133,5 +133,40 @@ function check(a, b) {
 }
 
 function correct(a) {
-  alert('答對囉！');
+  document.getElementById("quiz").classList.remove('w3-display-middle');
+  document.getElementById("quiz").classList.add('w3-display-left');
+  document.getElementById("quiz").style.width = '50%';
+  document.getElementById("quiz").style.marginLeft = '2em';
+  document.getElementById("quiz").style.marginRight = '2em';
+  document.getElementById("answer").style.display = "block";
+  document.getElementById("next").disabled = false;
+
+  switch (a) {
+    case 1:
+      var p1 = document.createElement('p');
+      p1.innnerHTML = '彎中煞車是非常危險的事情，當傾角越大的時候，';
+      var img = document.createElement('img');
+      img.src = 'img/1.jpg';
+      img.width = '100%';
+      var p2 = document.createElement('p');
+      p2.innerHTML = '輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。';
+      var p3 = document.createElement('p');
+      p3.innerHTML = '為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角,當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。';
+      document.getElementById('explanation').appendChild(p1);
+      document.getElementById('explanation').appendChild(img);
+      document.getElementById('explanation').appendChild(p2);
+      document.getElementById('explanation').appendChild(p3);
+      break;
+  }
+}
+
+function next() {
+  document.getElementById("next").disabled = true;
+  quiz(n += 1);
+  document.getElementById("quiz").classList.remove('w3-display-left');
+  document.getElementById("quiz").classList.add('w3-display-middle');
+  document.getElementById("quiz").style.width = null;
+  document.getElementById("quiz").style.marginLeft = null;
+  document.getElementById("quiz").style.marginRight = null;
+  document.getElementById("answer").style.display = "none";
 }

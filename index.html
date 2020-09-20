@@ -13,14 +13,8 @@
 
   body,
   html {
-    height: 100%
-  }
-
-  .bg {
     background-color: #2f3640;
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
+    height: 100%
   }
 
   button {
@@ -29,15 +23,55 @@
     font-size: 18px;
   }
 
+  div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+  }
+
+  div.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  div.message {
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 999;
+    color: white;
+  }
+
+  @media only screen and (min-width : 800px) {
+    .message {
+      display: none;
+    }
+  }
+
 </style>
 
 <body onload="quiz(1)">
+  <div class="message w3-display-container">
+    <div class="w3-display-middle w3-xxlarge">
+      製作者很忙<br>
+      沒時間設計成響應式網頁<br>
+      所以沒辦法用手機看<br>
+      請用電腦開吧
+    </div>
+  </div>
 
-  <div class="bg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xxlarge" style="font-weight: 900;">
+  <div class="w3-display-container w3-animate-opacity w3-text-white" style="min-height: 100%">
+    <div class="w3-display-topleft w3-padding-large w3-xlarge sticky" style="font-weight: 900;">
       交通安全模擬試題
     </div>
-    <div class="w3-display-middle">
+    <div id="quiz" class="w3-display-middle">
       <h1 class="w3-animate-top w3-xlarge" style="font-weight: 700;"><span id='introduction'></span></h1>
       <p class="w3-animate-top w3-xxlarge">情境：<br><span id='situation'></span></p>
       <hr>
@@ -46,15 +80,20 @@
         <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'B')"><span id='optionB'></button>
         <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'C')"><span id='optionC'></button>
         <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'D')" id='btnD'><span id='optionD'></button>
-        <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="quiz(n+=1)">test</button>
+        <button class="w3-button w3-blue w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="next()" disabled id="next">下一題</button>
       </div>
     </div>
-    <div class="w3-display-bottomleft w3-padding-large" style="font-weight: 400;">
+    <div id='answer' class="w3-display-right w3-large" style="display: none; width: 40%; margin-left: 2em; margin-right: 2em;">
+      <p>
+        正解：
+      </p>
+      <div id="explanation"></div>
+    </div>
+    <div class="w3-display-bottomleft w3-padding-large footer" style="font-weight: 400;">
       國立東華大學 學生自治會 | Students ​Association​, National Dong Hwa University</a>
     </div>
-  </div>
 
-  <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

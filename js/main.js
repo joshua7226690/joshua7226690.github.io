@@ -149,7 +149,7 @@ function correct(a) {
       p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
       p1.appendChild(document.createElement('br'));
       var img = document.createElement('img');
-      img.src = 'img/1.jpg';
+      img.src = 'img/1.JPG';
       img.style.width = '100%';
       p1.appendChild(img);
       p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
@@ -164,7 +164,7 @@ function correct(a) {
       p1.appendChild(document.createTextNode('遇到「停」標記或是停車線，請先在那邊停車，然後再向前，在交叉路口與您車道會合的地方，再次停下。在那個地方將您的身體向前傾來查看建築物、停著的車子或是草叢，看看能不能看到有其他車流過來。在您在觀察的時候，確保您的前輪還沒有進入橫向路面。'));
       p1.appendChild(document.createElement('br'));
       var img = document.createElement('img');
-      img.src = 'img/4.jpg';
+      img.src = 'img/4.JPG';
       img.style.width = '100%';
       p1.appendChild(img);
       var p2 = document.createElement('p');
@@ -176,7 +176,7 @@ function correct(a) {
     case 3:
       var p1 = document.createElement('p');
       var img = document.createElement('img');
-      img.src = 'img/15.jpg';
+      img.src = 'img/15.JPG';
       img.style.width = '100%';
       p1.appendChild(img);
       p1.appendChild(document.createElement('br'));

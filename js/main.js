@@ -175,45 +175,28 @@ function correct(a) {
 
     case 3:
       var p1 = document.createElement('p');
-      p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
-      p1.appendChild(document.createElement('br'));
       var img = document.createElement('img');
-      img.src = 'img/1.jpg';
+      img.src = 'img/15.jpg';
       img.style.width = '100%';
       p1.appendChild(img);
-      p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
-      var p2 = document.createElement('p');
-      p2.appendChild(document.createTextNode('為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角，當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。'));
+      p1.appendChild(document.createElement('br'));
+      p1.appendChild(document.createTextNode('遇到行人穿越時，應該讓車輛暫停，禮讓行人，車輛不暫停禮讓行人先行通過，處1,200-3,600元罰鍰，禮讓行人是行車禮儀更是法規規範，不要為了那幾秒，跟錢包過不去阿！'));
       explanation.appendChild(p1);
-      explanation.appendChild(p2);
       break;
 
     case 4:
       var p1 = document.createElement('p');
-      p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
-      p1.appendChild(document.createElement('br'));
-      var img = document.createElement('img');
-      img.src = 'img/1.jpg';
-      img.style.width = '100%';
-      p1.appendChild(img);
-      p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
-      var p2 = document.createElement('p');
-      p2.appendChild(document.createTextNode('為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角，當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。'));
+      p1.appendChild(document.createTextNode('不論行駛在東華校內或是志學街時，都不應該併排騎車，並且腳踏車應確實裝設前後車燈，機車應該全時點燈。'));
       explanation.appendChild(p1);
-      explanation.appendChild(p2);
       break;
 
     case 5:
       var p1 = document.createElement('p');
-      p1.appendChild(document.createTextNode('彎中煞車是非常危險的事情，當傾角越大的時候，'));
-      p1.appendChild(document.createElement('br'));
-      var img = document.createElement('img');
-      img.src = 'img/1.jpg';
-      img.style.width = '100%';
-      p1.appendChild(img);
-      p1.appendChild(document.createTextNode('輪胎失去循跡力的可能性就越大。避免危險，入彎前車速不宜過快。'));
+      p1.appendChild(document.createTextNode('如果要左轉停車，應該先打方向燈後減速，待沒有車輛後再轉彎，千萬不要打了方向燈馬上轉彎，也不要先打左轉方向燈，然後向右靠，這些行為都很危險。'));
       var p2 = document.createElement('p');
-      p2.appendChild(document.createTextNode('為了要能夠快速且安全的在彎中停下來，根據道路以及交通狀況，您應該盡可能的讓機車垂直於路面，然後再煞車。如果條件不允許，應平順且逐漸地煞車，但不要施加與機車垂直於路面時候相同的煞車力道。當您變慢的時候，您可以減小您的傾角，當可以用於煞車的循跡力變多的時候，您就可以使用更多的煞車，如此當機車停下來的時候，應該會是垂直於路面，手把回正的狀態。'));
+      p2.appendChild(document.createTextNode('根據交通法規：轉彎時，至少距離交岔路口30公尺前即應顯示方向燈或手勢，如果不依規定使用燈光，將會依違反道路交通管理處罰條例42條，處新臺幣1,200~3,600元的罰鍰。'));
+      p2.appendChild(document.createElement('br'));
+      p2.appendChild(document.createTextNode('轉彎時，至少距離交岔路口30公尺前即應顯示方向燈或手勢，如果不依規定使用燈光，將會依違反道路交通管理處罰條例42條，處新臺幣1,200~3,600元的罰鍰。'));
       explanation.appendChild(p1);
       explanation.appendChild(p2);
       break;

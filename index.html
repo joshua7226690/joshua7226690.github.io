@@ -23,13 +23,14 @@
     font-size: 18px;
   }
 
-  div.sticky {
-    position: -webkit-sticky;
-    position: sticky;
+  div.topleft {
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100%;
   }
 
-  div.footer {
+  div.bottomleft {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -68,14 +69,13 @@
   </div>
 
   <div class="w3-display-container w3-animate-opacity w3-text-white" style="min-height: 100%">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge sticky" style="font-weight: 900;">
+    <div class="topleft w3-padding-large w3-xlarge" style="font-weight: 900;">
       交通安全模擬試題
     </div>
     <div id="quiz" class="w3-display-middle">
-      <h1 class="w3-animate-top w3-xlarge" style="font-weight: 700;"><span id='introduction'></span></h1>
-      <p class="w3-animate-top w3-xxlarge">情境：<br><span id='situation'></span></p>
-      <hr>
-      <div class="w3-animate-top">
+      <p id="QS" class="w3-animate-top w3-xxlarge" style="font-weight: 700;"><span id='situation'></span></p>
+      <hr id="QR">
+      <div id="QB" class="w3-animate-top">
         <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'A')"><span id='optionA'></button>
         <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'B')"><span id='optionB'></button>
         <button class="w3-button w3-pale-green w3-hover-blue-grey w3-round-large w3-block w3-left-align" onclick="check(n, 'C')"><span id='optionC'></button>
@@ -84,16 +84,17 @@
       </div>
     </div>
     <div id='answer' class="w3-display-right w3-large" style="display: none; width: 40%; margin-left: 2em; margin-right: 2em;">
-      <p>
+      <p class="w3-animate-right">
         正解！！！
       </p>
-      <div id="explanation"></div>
+      <div id="explanation" class="w3-animate-right"></div>
     </div>
-    <div class="w3-display-bottomleft w3-padding-large footer" style="font-weight: 400;">
+    <div class="bottomleft w3-padding-large" style="font-weight: 400;">
       國立東華大學 學生自治會 | Students ​Association​, National Dong Hwa University</a>
     </div>
+  </div>
 
-    <script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

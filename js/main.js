@@ -134,8 +134,8 @@ function correct(a) {
   document.getElementById("quiz").style.marginRight = '2em';
   document.getElementById("QS").classList.remove('w3-animate-top');
   document.getElementById("QS").classList.add('w3-animate-right');
-  document.getElementById("QR").classList.remove('w3-animate-top');
-  document.getElementById("QR").classList.add('w3-animate-right');
+  document.getElementById("QH").classList.remove('w3-animate-top');
+  document.getElementById("QH").classList.add('w3-animate-right');
   document.getElementById("QB").classList.remove('w3-animate-top');
   document.getElementById("QB").classList.add('w3-animate-right');
   document.getElementById("answer").style.display = "block";
@@ -217,8 +217,8 @@ function next() {
   document.getElementById("quiz").classList.add('w3-display-middle');
   document.getElementById("QS").classList.remove('w3-animate-right');
   document.getElementById("QS").classList.add('w3-animate-left');
-  document.getElementById("QR").classList.remove('w3-animate-right');
-  document.getElementById("QR").classList.add('w3-animate-left');
+  document.getElementById("QH").classList.remove('w3-animate-right');
+  document.getElementById("QH").classList.add('w3-animate-left');
   document.getElementById("QB").classList.remove('w3-animate-right');
   document.getElementById("QB").classList.add('w3-animate-left');
   document.getElementById("quiz").style.width = null;

@@ -282,6 +282,11 @@ function correct(a) {
 
     case 5:
       var p1 = document.createElement('p');
+      var img = document.createElement('img');
+      img.src = 'img/24.JPG';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createElement('br'));
       p1.appendChild(document.createTextNode('不論行駛在東華校內或是志學街時，都不應該併排騎車，並且腳踏車應確實裝設前後車燈，機車應該全時點燈。'));
 
       explanation.appendChild(p1);
@@ -289,6 +294,11 @@ function correct(a) {
 
     case 6:
       var p1 = document.createElement('p');
+      var img = document.createElement('img');
+      img.src = 'img/22.JPG';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createElement('br'));
       p1.appendChild(document.createTextNode('如果要左轉停車，應該先打方向燈後減速，待沒有車輛後再轉彎，千萬不要打了方向燈馬上轉彎，也不要先打左轉方向燈，然後向右靠，這些行為都很危險。'));
 
       var p2 = document.createElement('p');
@@ -303,7 +313,7 @@ function correct(a) {
     case 7:
       var p1 = document.createElement('p');
       var img = document.createElement('img');
-      img.src = 'img/18.jpg';
+      img.src = 'img/18.JPG';
       img.style.width = '100%';
       p1.appendChild(img);
       p1.appendChild(document.createElement('br'));
@@ -314,6 +324,11 @@ function correct(a) {
 
     case 8:
       var p1 = document.createElement('p');
+      var img = document.createElement('img');
+      img.src = 'img/21.JPG';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createElement('br'));
       p1.appendChild(document.createTextNode('當然你要盡你所能來避免撞到動物。但是，如果您在車流當中的話，請保持在您的車道當中。撞到小東西的危險性遠比撞到大的東西例如說汽車來的低。'));
 
       var p2 = document.createElement('p');
@@ -325,6 +340,11 @@ function correct(a) {
 
     case 9:
       var p1 = document.createElement('p');
+      var img = document.createElement('img');
+      img.src = 'img/23.JPG';
+      img.style.width = '100%';
+      p1.appendChild(img);
+      p1.appendChild(document.createElement('br'));
       p1.appendChild(document.createTextNode('根據道路交通管理處罰條例第 47 條 汽車駕駛人（包括機車駕駛人）超車時，有下列情形之一者，處新臺幣一千二百元以上二千四百元以下罰鍰：'));
       p1.appendChild(document.createElement('br'));
       p1.appendChild(document.createTextNode('三、在前行車之「右側」超車，或超車時未保持適當之間隔，或未行至安全距離即行駛入原行路線。'));
@@ -366,9 +386,10 @@ function next() {
     document.getElementById("quiz").style.marginLeft = null;
     document.getElementById("quiz").style.marginRight = null;
     document.getElementById("answer").style.display = "none";
+    if (n == 10) {
+      document.getElementById('next').innerHTML = '完成';
+    }
   } else {
-    document.getElementById('quiz').style.display = "none";
-    document.getElementById('answer').style.display = "none";
-    document.getElementById('personalData').style.display = 'block';
+    document.getElementById('next').onclick = window.open('https://docs.google.com/forms/d/e/1FAIpQLSezagQW-b9SdErBP3p3H7734M97yxFkPKMdHxQp-90RqTZt2A/viewform?usp=sf_link', '_self');
   }
 }

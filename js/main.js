@@ -390,6 +390,7 @@ function next() {
       document.getElementById('next').innerHTML = '完成';
     }
   } else {
-    document.getElementById('next').onclick = window.open('https://docs.google.com/forms/d/e/1FAIpQLSezagQW-b9SdErBP3p3H7734M97yxFkPKMdHxQp-90RqTZt2A/viewform?usp=sf_link', '_self');
+    alert('請登入學校信箱');
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSezagQW-b9SdErBP3p3H7734M97yxFkPKMdHxQp-90RqTZt2A/viewform?usp=sf_link', '_self');
   }
 }
